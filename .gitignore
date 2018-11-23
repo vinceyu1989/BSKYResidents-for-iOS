@@ -15,11 +15,6 @@ profile
 DerivedData
 .idea/
 *.hmap
-*.xccheckout
-*.xcworkspace
-!default.xcworkspace
 
 #CocoaPods
 Pods
-!Podfile
-!Podfile.lock
