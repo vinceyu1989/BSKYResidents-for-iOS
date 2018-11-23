@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddressListVC">
+            <connections>
+                <outlet property="addBtn" destination="7c4-qf-hFk" id="t8A-PC-kYb"/>
+                <outlet property="emptyView" destination="ebU-Kc-rGa" id="A8Z-9i-P3t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-Kc-rGa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cannotcall" translatesAutoresizingMaskIntoConstraints="NO" id="Ter-GF-urb">
+                            <rect key="frame" x="143.5" y="210" width="88" height="85"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="抱歉，您还没有上门服务地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SM-f1-4uS">
+                            <rect key="frame" x="88" y="325" width="199" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7c4-qf-hFk">
+                            <rect key="frame" x="62" y="373" width="250" height="45"/>
+                            <color key="backgroundColor" red="0.30588235294117649" green="0.49019607843137253" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="T4H-Kf-Ydz"/>
+                                <constraint firstAttribute="width" constant="250" id="rjb-92-jmf"/>
+                            </constraints>
+                            <state key="normal" title="新增服务地址"/>
+                            <connections>
+                                <action selector="addBtnPressed:" destination="-1" eventType="touchUpInside" id="liy-eI-qEg"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="9SM-f1-4uS" firstAttribute="centerX" secondItem="ebU-Kc-rGa" secondAttribute="centerX" id="DGr-tW-eBQ"/>
+                        <constraint firstItem="7c4-qf-hFk" firstAttribute="centerX" secondItem="9SM-f1-4uS" secondAttribute="centerX" id="I30-yt-wY4"/>
+                        <constraint firstItem="9SM-f1-4uS" firstAttribute="top" secondItem="Ter-GF-urb" secondAttribute="bottom" constant="30" id="JG0-px-Xi7"/>
+                        <constraint firstItem="Ter-GF-urb" firstAttribute="centerX" secondItem="9SM-f1-4uS" secondAttribute="centerX" id="NSh-Fk-UsV"/>
+                        <constraint firstItem="7c4-qf-hFk" firstAttribute="top" secondItem="9SM-f1-4uS" secondAttribute="bottom" constant="30" id="mEU-4r-yUg"/>
+                        <constraint firstItem="9SM-f1-4uS" firstAttribute="centerY" secondItem="ebU-Kc-rGa" secondAttribute="centerY" id="oz5-B6-xZ9"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ebU-Kc-rGa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="9OL-qj-IB7"/>
+                <constraint firstItem="ebU-Kc-rGa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Dcu-Iv-Sbs"/>
+                <constraint firstAttribute="bottom" secondItem="ebU-Kc-rGa" secondAttribute="bottom" id="GmE-UT-ern"/>
+                <constraint firstAttribute="trailing" secondItem="ebU-Kc-rGa" secondAttribute="trailing" id="eex-jr-ABq"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="cannotcall" width="88" height="85"/>
+    </resources>
+</document>

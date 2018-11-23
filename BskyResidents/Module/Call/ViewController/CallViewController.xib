@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CallViewController">
+            <connections>
+                <outlet property="bottomView" destination="I3K-oS-SRh" id="Se8-qK-h04"/>
+                <outlet property="callBtn" destination="T2T-dc-Ps2" id="q7B-Yw-kdU"/>
+                <outlet property="generalBtn" destination="WMU-Kp-oy4" id="k3o-wu-ZkS"/>
+                <outlet property="segmentImageView" destination="lGY-Ur-Vzt" id="xGv-bw-a2B"/>
+                <outlet property="specialistBtn" destination="ccU-sD-AjO" id="ttN-5J-g3y"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_map_bg" translatesAutoresizingMaskIntoConstraints="NO" id="4VS-Gj-jTI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="582"/>
+                    <color key="backgroundColor" red="1" green="0.61568627450000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_mapLoction_bg" translatesAutoresizingMaskIntoConstraints="NO" id="8sg-LW-lKd">
+                    <rect key="frame" x="78" y="78.5" width="219" height="345"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I3K-oS-SRh">
+                    <rect key="frame" x="0.0" y="582" width="375" height="85"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call_segment_bg" translatesAutoresizingMaskIntoConstraints="NO" id="lGY-Ur-Vzt">
+                            <rect key="frame" x="37.5" y="22" width="300" height="40"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMU-Kp-oy4">
+                            <rect key="frame" x="37.5" y="22" width="150" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title=" 全科医生" image="call_general_normal">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="generalBtnPressed:" destination="-1" eventType="touchUpInside" id="PQ8-Wp-KnC"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccU-sD-AjO">
+                            <rect key="frame" x="187.5" y="22" width="150" height="40"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title=" 专科医生" image="call_specialist_normal">
+                                <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="specialistBtnPressed:" destination="-1" eventType="touchUpInside" id="wM6-BQ-X3N"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="ccU-sD-AjO" firstAttribute="leading" secondItem="lGY-Ur-Vzt" secondAttribute="centerX" id="9EP-xW-kT8"/>
+                        <constraint firstItem="ccU-sD-AjO" firstAttribute="top" secondItem="lGY-Ur-Vzt" secondAttribute="top" id="B9g-TE-BNm"/>
+                        <constraint firstItem="lGY-Ur-Vzt" firstAttribute="centerX" secondItem="I3K-oS-SRh" secondAttribute="centerX" id="NlC-9o-jEW"/>
+                        <constraint firstItem="WMU-Kp-oy4" firstAttribute="bottom" secondItem="lGY-Ur-Vzt" secondAttribute="bottom" id="Nmr-3J-0W7"/>
+                        <constraint firstItem="lGY-Ur-Vzt" firstAttribute="centerY" secondItem="I3K-oS-SRh" secondAttribute="centerY" id="UIf-C4-Agz"/>
+                        <constraint firstItem="WMU-Kp-oy4" firstAttribute="trailing" secondItem="lGY-Ur-Vzt" secondAttribute="centerX" id="W2Y-ls-Aag"/>
+                        <constraint firstItem="ccU-sD-AjO" firstAttribute="bottom" secondItem="lGY-Ur-Vzt" secondAttribute="bottom" id="iB1-e3-Gab"/>
+                        <constraint firstItem="ccU-sD-AjO" firstAttribute="trailing" secondItem="lGY-Ur-Vzt" secondAttribute="trailing" id="iT8-Es-c2J"/>
+                        <constraint firstItem="WMU-Kp-oy4" firstAttribute="top" secondItem="lGY-Ur-Vzt" secondAttribute="top" id="pFx-3F-dYf"/>
+                        <constraint firstItem="WMU-Kp-oy4" firstAttribute="leading" secondItem="lGY-Ur-Vzt" secondAttribute="leading" id="uKv-9I-79W"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T2T-dc-Ps2">
+                    <rect key="frame" x="152" y="492" width="70" height="70"/>
+                    <state key="normal" image="call_btn_icon"/>
+                    <connections>
+                        <action selector="callBtnPressed:" destination="-1" eventType="touchUpInside" id="NCm-pc-DKb"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="I3K-oS-SRh" firstAttribute="top" secondItem="4VS-Gj-jTI" secondAttribute="bottom" id="3YG-9j-vrw"/>
+                <constraint firstAttribute="trailing" secondItem="4VS-Gj-jTI" secondAttribute="trailing" id="4Av-g3-9Pw"/>
+                <constraint firstItem="8sg-LW-lKd" firstAttribute="centerX" secondItem="4VS-Gj-jTI" secondAttribute="centerX" id="8RE-MY-DTk"/>
+                <constraint firstAttribute="trailing" secondItem="I3K-oS-SRh" secondAttribute="trailing" id="FLO-uI-tXo"/>
+                <constraint firstItem="4VS-Gj-jTI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="K9R-vT-gGF"/>
+                <constraint firstAttribute="bottom" secondItem="I3K-oS-SRh" secondAttribute="bottom" id="Pvs-88-Zps"/>
+                <constraint firstItem="4VS-Gj-jTI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TlU-zT-1Ty"/>
+                <constraint firstItem="8sg-LW-lKd" firstAttribute="centerY" secondItem="4VS-Gj-jTI" secondAttribute="centerY" constant="-40" id="WSZ-rB-dTv"/>
+                <constraint firstItem="T2T-dc-Ps2" firstAttribute="centerX" secondItem="I3K-oS-SRh" secondAttribute="centerX" id="mVC-NP-gIc"/>
+                <constraint firstItem="I3K-oS-SRh" firstAttribute="top" secondItem="T2T-dc-Ps2" secondAttribute="bottom" constant="20" id="qHl-XJ-vy4"/>
+                <constraint firstItem="I3K-oS-SRh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rL3-Gt-CZ8"/>
+                <constraint firstAttribute="bottom" secondItem="4VS-Gj-jTI" secondAttribute="bottom" constant="85" id="x0h-8l-k8V"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="call_btn_icon" width="70" height="70"/>
+        <image name="call_general_normal" width="12" height="15"/>
+        <image name="call_mapLoction_bg" width="219" height="345"/>
+        <image name="call_map_bg" width="375" height="666"/>
+        <image name="call_segment_bg" width="300" height="40"/>
+        <image name="call_specialist_normal" width="12" height="15"/>
+    </resources>
+</document>

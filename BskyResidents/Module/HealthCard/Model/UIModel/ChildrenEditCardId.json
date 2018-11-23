@@ -1,0 +1,35 @@
+{
+    "contentStr": "填写以下信息",
+    "content": [{
+                "title": "姓名:",
+                "code": "name",
+                "value": "",
+                "placeholder": "请输入姓名",
+                "isRequire": "1",
+                "canEdit": "1",
+                "contentStr": "",
+                "type": "2"
+                },
+                {
+                "title": "身份证号:",
+                "code": "idNo",
+                "value": "",
+                "placeholder": "请输入身份证号",
+                "isRequire": "1",
+                "canEdit": "1",
+                "contentStr": "",
+                "type": "2"
+                },
+                {
+                "title": "民族:",
+                "code": "nation",
+                "value": "",
+                "placeholder": "请选择",
+                "isRequire": "1",
+                "canEdit": "1",
+                "contentStr": "",
+                "type": "1",
+                }
+                ]
+    
+}

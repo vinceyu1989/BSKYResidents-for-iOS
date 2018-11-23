@@ -1,0 +1,66 @@
+//
+//  Bsky_PrefixHeader.pch
+//  BskyResidents
+//
+//  Created by 何雷 on 2017/7/18.
+//  Copyright © 2017年 何雷. All rights reserved.
+//
+
+#ifndef Bsky_PrefixHeader_pch
+#define Bsky_PrefixHeader_pch
+
+#ifdef __OBJC__
+
+// 宏定义
+#import "BskyMacroDefinition.h"
+#import "BskyCustomizeEnum.h"
+#import "API.h"
+#import "BSAppManager.h"
+#import "BSInsetLabel.h"
+#import "BSKYAPPIDWithAPPKEY.h"
+// Category
+#import "NSObject+SystemInfo.h"
+#import "UIImage+Extension.h"
+#import "NSString+Extension.h"
+#import "UIView+Appearance.h"
+#import "UITableViewCell+Extension.h"
+#import "UILabel+lineSpace.h"
+#import "UIView+Badge.h"
+#import "UIView+BSToast.h"
+#import "UIImage+QRCode.h"
+#import "MBProgressHUD+BSKY.h"
+#import "AlertViewController.h"
+#import "NSArray+CBC.h"
+// pod
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <BSKYCore/BSKYCore.h>
+#import <BSKYCore/BSCategories.h>
+#import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
+#import <MJRefresh/MJRefresh.h>
+#import <YYWebImage/YYWebImage.h>
+#import <YYCategories/YYCategories.h>
+#import <AFNetworking/AFNetworking.h>
+#import <UIColor+YYAdd.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "BSWebViewController.h"
+
+// NIM 相关
+#import <NIMKit/NIMKit.h>
+#import <NIMAVChat/NIMAVChat.h>
+#import <NIMSDK/NIMSDK.h>
+#import "NTESGlobalMacro.h"
+#import "CocoaLumberjack.h"
+
+#ifdef DEBUG
+static DDLogLevel ddLogLevel = DDLogLevelVerbose;
+#else
+static DDLogLevel ddLogLevel = DDLogLevelInfo;
+#endif
+
+// External
+#import "ZZYQRCode.h"
+
+#endif
+
+#endif

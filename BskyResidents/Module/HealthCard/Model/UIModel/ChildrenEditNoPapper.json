@@ -1,0 +1,69 @@
+{
+    "baseInfo": {
+        "contentStr": "儿童信息",
+        "content": [{
+                    "title": "出生日期:",
+                    "code": "birthday",
+                    "value": "",
+                    "placeholder": "请选择",
+                    "isRequire": "1",
+                    "canEdit": "1",
+                    "contentStr": "",
+                    "type": "0"
+                    },
+                    {
+                    "title": "性别:",
+                    "code": "gender",
+                    "value": "",
+                    "placeholder": "请选择",
+                    "isRequire": "1",
+                    "canEdit": "1",
+                    "contentStr": "",
+                    "type": "1",
+                    "pickerModel":{
+                    "options": [
+                                {
+                                "lebel": "男",
+                                "value": "1"
+                                },
+                                {
+                                "lebel": "女",
+                                "value": "2"
+                                }]
+                    }
+                    },
+                    {
+                    "title": "民族:",
+                    "code": "nation",
+                    "value": "",
+                    "placeholder": "请选择",
+                    "isRequire": "1",
+                    "canEdit": "1",
+                    "contentStr": "",
+                    "type": "1"
+                    }
+                    ]
+    },
+    "mqInfo": {
+        "contentStr": "母亲信息",
+        "content": [{
+                    "title": "母亲姓名:",
+                    "code": "mqname",
+                    "value": "",
+                    "placeholder": "请输入母亲姓名",
+                    "isRequire": "1",
+                    "canEdit": "1",
+                    "contentStr": "",
+                    "type": "2"
+                    }, {
+                    "title": "身份证号:",
+                    "code": "mqidno",
+                    "value": "",
+                    "placeholder": "请输入身份证号",
+                    "isRequire": "1",
+                    "canEdit": "1",
+                    "contentStr": "",
+                    "type": "2"
+                    }]
+    }
+}

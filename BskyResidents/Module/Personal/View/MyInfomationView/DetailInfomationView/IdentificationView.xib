@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="53" height="15"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dJ6-ZV-Ho4" userLabel="已认证">
+                    <rect key="frame" x="0.0" y="0.0" width="53" height="15"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="认证ico" translatesAutoresizingMaskIntoConstraints="NO" id="pNA-Xj-kjc">
+                            <rect key="frame" x="2" y="2" width="11" height="11"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="11" id="ewd-2e-NOZ"/>
+                                <constraint firstAttribute="width" constant="11" id="u08-ej-WBp"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="已认证" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="teq-gW-UAd">
+                            <rect key="frame" x="17" y="1.5" width="34" height="13.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.33333333329999998" green="0.87058823529999996" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="53" id="97L-wJ-PVu"/>
+                        <constraint firstItem="teq-gW-UAd" firstAttribute="leading" secondItem="pNA-Xj-kjc" secondAttribute="trailing" constant="4" id="Fym-o5-cFW"/>
+                        <constraint firstItem="pNA-Xj-kjc" firstAttribute="leading" secondItem="dJ6-ZV-Ho4" secondAttribute="leading" constant="2" id="GEz-BA-nJH"/>
+                        <constraint firstItem="teq-gW-UAd" firstAttribute="centerY" secondItem="pNA-Xj-kjc" secondAttribute="centerY" id="NLC-Lw-MpC"/>
+                        <constraint firstAttribute="height" constant="15" id="Z4y-01-6ra"/>
+                        <constraint firstItem="pNA-Xj-kjc" firstAttribute="centerY" secondItem="dJ6-ZV-Ho4" secondAttribute="centerY" id="rlJ-lI-JKU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dJ6-ZV-Ho4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="HwD-hn-iLQ"/>
+                <constraint firstAttribute="bottom" secondItem="dJ6-ZV-Ho4" secondAttribute="bottom" id="Mg7-xJ-myZ"/>
+                <constraint firstAttribute="trailing" secondItem="dJ6-ZV-Ho4" secondAttribute="trailing" id="SEX-6U-zLs"/>
+                <constraint firstItem="dJ6-ZV-Ho4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="arx-jI-jIz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-15.5" y="50.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="认证ico" width="11" height="11"/>
+    </resources>
+</document>

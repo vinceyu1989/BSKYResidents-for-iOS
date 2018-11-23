@@ -1,0 +1,67 @@
+{
+    "contentStr": "填写以下信息",
+    "content": [
+                {
+                "title": "姓名:",
+                "code": "name",
+                "value": "",
+                "placeholder": "请输入姓名",
+                "isRequire": "1",
+                "canEdit": "1",
+                "contentStr": "",
+                "type": "2",
+                },
+                {
+                "title": "出生证号:",
+                "code": "idNo",
+                "value": "",
+                "placeholder": "请输入出生证号",
+                "isRequire": "1",
+                "canEdit": "1",
+                "contentStr": "",
+                "type": "2",
+                },
+                {
+                "title": "出生日期:",
+                "code": "birthday",
+                "value": "",
+                "placeholder": "请选择",
+                "isRequire": "1",
+                "canEdit": "1",
+                "contentStr": "",
+                "type": "0"
+                },
+                {
+                "title": "性别:",
+                "code": "gender",
+                "value": "",
+                "placeholder": "请选择",
+                "isRequire": "1",
+                "canEdit": "1",
+                "contentStr": "",
+                "type": "1",
+                "pickerModel":{
+                "options": [
+                            {
+                            "lebel": "男",
+                            "value": "1"
+                            },
+                            {
+                            "lebel": "女",
+                            "value": "2"
+                            }]
+                }
+                },
+                {
+                "title": "民族:",
+                "code": "nation",
+                "value": "",
+                "placeholder": "请选择",
+                "isRequire": "1",
+                "canEdit": "1",
+                "contentStr": "",
+                "type": "1"
+                },
+                ]
+    
+}
